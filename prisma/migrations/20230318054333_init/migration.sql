@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Experience" ALTER COLUMN "startedAt" SET DEFAULT CURRENT_TIMESTAMP;
