@@ -11,6 +11,7 @@ import { ConfigService } from '@nestjs/config';
 
 async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
+  app.enableCors();
   const logger = new Logger('App');
   const config = new DocumentBuilder()
     .setTitle('Portofolio')
