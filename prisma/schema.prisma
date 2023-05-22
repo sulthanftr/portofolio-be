@@ -10,6 +10,13 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model Project {
+  id          Int      @id @default(autoincrement())
+  title       String   @unique
+  description String
+  url         String
+}
+
 model Experience {
   id          Int      @id @default(autoincrement())
   title       String   @unique
